@@ -28,6 +28,10 @@ All processing runs locally in your browser — no image data is uploaded to any
 - HTML, CSS, JavaScript
 - Client-side image processing with Canvas API
 
+## Live Site
+
+https://sct-cs-2-sigma.vercel.app/
+
 ## Author
 
 Vempali Hrishita
