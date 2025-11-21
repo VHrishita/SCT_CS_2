@@ -17,17 +17,14 @@ html,body{
   -webkit-font-smoothing:antialiased;
 }
 
-/* MAIN CONTAINER — widened + spaced */
 .container{
   max-width:1050px;
-  margin:40px auto 120px;   /* space above + avoid footer overlap */
+  margin:40px auto 120px;  
   padding:30px;
   display:flex;
   flex-direction:column;
   gap:28px;
 }
-
-/* HEADER */
 header h1{
   margin:0;
   color:var(--accent);
@@ -42,8 +39,6 @@ header h1{
   font-size:15px;
   text-align: center;
 }
-
-/* CONTROL BLOCK — more padding + spacing */
 .controls{
   background:var(--card);
   padding:22px;
@@ -54,16 +49,12 @@ header h1{
   flex-direction:column;
   gap:20px;
 }
-
-/* Rows */
 .row{
   display:flex;
   gap:18px;
   align-items:center;
   flex-wrap:wrap;
 }
-
-/* File input */
 .file-label{
   display:inline-block;
   padding:10px 14px;
@@ -81,8 +72,6 @@ label{
   flex-direction:column;
   gap:6px;
 }
-
-/* Inputs */
 input[type="text"], input[type="number"], select, input#keyInput{
   padding:10px 12px;
   border-radius:8px;
@@ -92,8 +81,6 @@ input[type="text"], input[type="number"], select, input#keyInput{
   outline:none;
   font-size:14px;
 }
-
-/* Buttons */
 .btn{
   padding:10px 16px;
   border-radius:8px;
@@ -114,8 +101,6 @@ input[type="text"], input[type="number"], select, input#keyInput{
 .btn.ghost{
   background:rgba(255,255,255,0.03);
 }
-
-/* PREVIEW — more spacing */
 .preview{
   display:flex;
   gap:20px;
@@ -123,8 +108,6 @@ input[type="text"], input[type="number"], select, input#keyInput{
   flex-wrap:wrap;
   margin-top:10px;
 }
-
-/* Canvas */
 canvas{
   background:#000;
   border-radius:10px;
@@ -141,8 +124,6 @@ canvas{
   font-size:15px;
   line-height:1.6;
 }
-
-/* FOOTER — stays bottom but separated cleanly */
 .footer{
   position:fixed;
   bottom:0;
@@ -166,8 +147,6 @@ canvas{
   font-size:12px;
   color:#8aa3b4;
 }
-
-/* Responsive */
 @media(max-width:720px){
   .container{padding:20px;margin-top:20px;}
   .preview{flex-direction:column;}
