@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Image Encryptor — Pixel Manipulation</title>
+  <link rel="icon" type="image/png" href="logo.png"/>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Image Encryptor</h1>
+      <p class="subtitle">Simple pixel-level image encryption & decryption</p>
+      <p class="subtitle">Every image hides a truth. Your key decides what it reveals</p>
+    </header>
+
+    <section class="controls">
+      <div class="row">
+        <label class="file-label">
+          Choose image
+          <input type="file" id="fileInput" accept="image/*">
+        </label>
+
+        <label>
+          Operation
+          <select id="operation">
+            <option value="xor">XOR (key)</option>
+            <option value="add">Add (mod 256)</option>
+            <option value="shuffle">Shuffle pixels (permute)</option>
+          </select>
+        </label>
+
+        <label>
+          Key (text or number)
+          <input id="keyInput" placeholder="e.g. secret or 123" />
+        </label>
+      </div>
+
+      <div class="row">
+        <button id="encryptBtn" class="btn primary">Encrypt</button>
+        <button id="decryptBtn" class="btn">Decrypt</button>
+        <button id="downloadBtn" class="btn ghost" disabled>Download Result</button>
+        <button id="resetBtn" class="btn">Reset</button>
+      </div>
+
+      <div class="row small">
+        <label><input type="checkbox" id="applyToAlpha"> Modify alpha channel too</label>
+        <label><input type="checkbox" id="previewStretch" checked> Stretch preview to fit</label>
+      </div>
+    </section>
+
+    <section class="preview">
+      <canvas id="canvas"></canvas>
+      <div class="info">
+        <p id="infoText">No image loaded</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© 2025 Vempali Hrishita. All rights reserved.</p>
+      <p class="disclaimer">This tool runs entirely in your browser. No image data is uploaded or stored.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
