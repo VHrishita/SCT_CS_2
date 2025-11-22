@@ -132,7 +132,7 @@ function processImage({mode='encrypt'}){
       newBytes[destPos] = data[srcPos];
       newBytes[destPos+1] = data[srcPos+1];
       newBytes[destPos+2] = data[srcPos+2];
-      newBytes[destPos+3] = preserveAlpha ? data[srcPos+3] : data[srcPos+3]; // alpha preserved by default
+      newBytes[destPos+3] = preserveAlpha ? data[srcPos+3] : data[srcPos+3];
     }
     for(let i=0;i<data.length;i++) data[i] = newBytes[i];
   }
