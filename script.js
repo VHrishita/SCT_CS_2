@@ -83,7 +83,6 @@ function processImage({mode='encrypt'}){
   }
   const w = originalImage.naturalWidth;
   const h = originalImage.naturalHeight;
-  // create temp canvas
   const temp = document.createElement('canvas');
   temp.width = w; temp.height = h;
   const tctx = temp.getContext('2d');
